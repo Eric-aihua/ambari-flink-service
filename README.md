@@ -15,7 +15,7 @@ Limitations:
 
 Author: [Ali Bajwa](https://github.com/abajwa-hw)
 - Thanks to [Davide Vergari](https://github.com/dvergari) for enhancing to run in clustered env
-- Thanks to [Ben Harris](https://github.com/jamesbenharris) for updating libraries to work with HDP 2.5.3
+- Thanks to [Ben Harris](https://github.com/jamesbenharris) for updating libraries to work with HDP 2.6.5
 #### Setup
 
 - Download HDP 2.6 sandbox VM image (Sandbox_HDP_2.6_5_VMware.ova) from [Hortonworks website](http://hortonworks.com/products/hortonworks-sandbox/)
