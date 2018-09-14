@@ -14,7 +14,7 @@ class Master(Script):
       
 
             
-    #e.g. /var/lib/ambari-agent/cache/stacks/HDP/2.3/services/FLINK/package
+    #e.g. /var/lib/ambari-agent/cache/stacks/HDP/2.6/services/FLINK/package
     service_packagedir = os.path.realpath(__file__).split('/scripts')[0] 
             
     Execute('rm -rf ' + params.flink_install_dir, ignore_failures=True)
