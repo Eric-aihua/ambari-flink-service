@@ -61,7 +61,7 @@ class Master(Script):
     
       
       Execute('echo Compiling Flink from source')
-      Execute('cd '+params.flink_install_dir+'; git clone https://github.com/apache/flink.git '+params.flink_install_dir +' >> ' + params.flink_log_file)
+      Execute('cd '+params.flink_install_dir+'; git clone https://github.com/highfei2011/flink.git '+params.flink_install_dir +' >> ' + params.flink_log_file)
       Execute('chown -R ' + params.flink_user + ':' + params.flink_group + ' ' + params.flink_install_dir)
                 
       Execute('cd '+params.flink_install_dir+'; mvn clean install -DskipTests -Dhadoop.version=2.7.3.2.6.5.0-292 -Pvendor-repos >> ' + params.flink_log_file, user=params.flink_user)
