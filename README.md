@@ -4,9 +4,9 @@ Apache Flink is an open source platform for distributed stream and batch data pr
 More details on Flink and how it is being used in the industry today available here: [http://flink-forward.org/?post_type=session](http://flink-forward.org/?post_type=session)
 
 
-The Ambari service lets you easily install/compile Flink on HDP 2.5.3
+The Ambari service lets you easily install/compile Flink on HDP 2.6.5.0-292
 - Features:
-  - By default, downloads prebuilt package of Flink 1.2, but also gives option to build the latest Flink from source instead
+  - By default, downloads prebuilt package of Flink 1.6.0, but also gives option to build the latest Flink from source instead
   - Exposes flink-conf.yaml in Ambari UI 
 
 Limitations:
@@ -18,8 +18,8 @@ Author: [Ali Bajwa](https://github.com/abajwa-hw)
 - Thanks to [Ben Harris](https://github.com/jamesbenharris) for updating libraries to work with HDP 2.5.3
 #### Setup
 
-- Download HDP 2.5 sandbox VM image (Sandbox_HDP_2.5_1_VMware.ova) from [Hortonworks website](http://hortonworks.com/products/hortonworks-sandbox/)
-- Import Sandbox_HDP_2.3_1_VMware.ova into VMWare and set the VM memory size to 8GB
+- Download HDP 2.6 sandbox VM image (Sandbox_HDP_2.6_5_VMware.ova) from [Hortonworks website](http://hortonworks.com/products/hortonworks-sandbox/)
+- Import Sandbox_HDP_2.6_5_VMware.ova into VMWare and set the VM memory size to 8GB
 - Now start the VM
 - After it boots up, find the IP address of the VM and add an entry into your machines hosts file. For example:
 ```
@@ -36,7 +36,7 @@ ssh root@sandbox.hortonworks.com
 - To download the Flink service folder, run below
 ```
 VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
-sudo git clone https://github.com/abajwa-hw/ambari-flink-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/FLINK   
+sudo git clone https://github.com/highfei2011/ambari-flink-service/ambari-flink-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/FLINK   
 ```
 
 - Restart Ambari
