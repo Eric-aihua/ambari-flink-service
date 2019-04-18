@@ -64,7 +64,7 @@ class Master(Script):
       Execute('cd '+params.flink_install_dir+'; git clone https://github.com/highfei2011/flink.git '+params.flink_install_dir +' >> ' + params.flink_log_file)
       Execute('chown -R ' + params.flink_user + ':' + params.flink_group + ' ' + params.flink_install_dir)
                 
-      Execute('cd '+params.flink_install_dir+'; mvn clean install -DskipTests -Dhadoop.version=2.7.3.2.6.5.0-292 -Pvendor-repos >> ' + params.flink_log_file, user=params.flink_user)
+      Execute('cd '+params.flink_install_dir+'; mvn clean install -DskipTests -Dhadoop.version=2.7.3.2.6.4.0-91 -Pvendor-repos >> ' + params.flink_log_file, user=params.flink_user)
       
       #update the configs specified by user
       self.configure(env, True)
