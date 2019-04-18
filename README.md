@@ -4,9 +4,9 @@ Apache Flink is an open source platform for distributed stream and batch data pr
 More details on Flink and how it is being used in the industry today available here: [http://flink-forward.org/?post_type=session](http://flink-forward.org/?post_type=session)
 
 
-The Ambari service lets you easily install/compile Flink on HDP  2.6.5.0-292
+The Ambari service lets you easily install/compile Flink on HDP  2.6.4.0-91
 - Features:
-  - By default, downloads prebuilt package of Flink 1.6.0, but also gives option to build the latest Flink from source instead
+  - By default, downloads prebuilt package of Flink 1.7.2, but also gives option to build the latest Flink from source instead
   - Exposes flink-conf.yaml in Ambari UI 
 
 Limitations:
@@ -15,11 +15,11 @@ Limitations:
 
 Author: [Ali Bajwa](https://github.com/abajwa-hw)
 - Thanks to [Davide Vergari](https://github.com/dvergari) for enhancing to run in clustered env
-- Thanks to [Ben Harris](https://github.com/jamesbenharris) for updating libraries to work with HDP 2.6.5
+- Thanks to [Ben Harris](https://github.com/jamesbenharris) for updating libraries to work with HDP 2.6.4
 #### Setup
 
-- Download HDP 2.6 sandbox VM image (Sandbox_HDP_2.6_5_VMware.ova) from [Hortonworks website](http://hortonworks.com/products/hortonworks-sandbox/)
-- Import Sandbox_HDP_2.6_5_VMware.ova into VMWare and set the VM memory size to 8GB
+- Download HDP 2.6 sandbox VM image (Sandbox_HDP_2.6_4_VMware.ova) from [Hortonworks website](http://hortonworks.com/products/hortonworks-sandbox/)
+- Import Sandbox_HDP_2.6_4_VMware.ova into VMWare and set the VM memory size to 8GB
 - Now start the VM
 - After it boots up, find the IP address of the VM and add an entry into your machines hosts file. For example:
 ```
